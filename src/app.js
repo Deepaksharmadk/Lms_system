@@ -9,4 +9,5 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 //import routes
 import router from "./routes/user.route.js";
+app.use("/user", router);
 export default app;
